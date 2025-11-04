@@ -1,120 +1,178 @@
-import os
 
-# --- 1. DADOS ESTATÍSTICOS (Substitua por dados da API da Riot) ---
-dados_jogador = {
-    "nickname": "Seu Nick LOL",
-    "elo": "Mestre (120 PDL)",
-    "winrate": "62.5%",
-    "total_jogos": 480,
-    "kda_geral": 4.15,
-    "campeoes_top": [
-        {"nome": "Caitlyn", "jogos": 150, "winrate": "68%"},
-        {"nome": "Leona", "jogos": 120, "winrate": "61%"},
-        {"nome": "Jinx", "jogos": 80, "winrate": "59%"},
-    ],
-    "funcoes": [
-        {"funcao": "Atirador (ADC)", "porcentagem": "70%"},
-        {"funcao": "Suporte", "porcentagem": "20%"},
-        {"funcao": "Meio (MID)", "porcentagem": "10%"},
-    ]
-}
-
-# --- 2. FUNÇÕES DE GERAÇÃO DE CONTEÚDO HTML ---
-
-def gerar_campeoes_html(campeoes):
-    """Cria a lista HTML dos campeões mais jogados."""
-    lista_html = "<ul>\n"
-    for c in campeoes:
-        lista_html += f'    <li>{c["nome"]} - {c["jogos"]} Partidas ({c["winrate"]} Winrate)</li>\n'
-    lista_html += "</ul>"
-    return lista_html
-
-def gerar_funcoes_html(funcoes):
-    """Cria o HTML das funções mais jogadas."""
-    div_html = ""
-    for f in funcoes:
-        div_html += f'    <p><strong>{f["funcao"]}</strong>: {f["porcentagem"]} dos Jogos</p>\n'
-    return div_html
-
-
-# --- 3. TEMPLATE HTML PRINCIPAL ---
-
-def gerar_portfolio_html(dados):
-    """Monta o arquivo HTML final, injetando os dados de Python."""
-    
-    # Gerar os blocos de conteúdo dinâmico
-    campeoes_content = gerar_campeoes_html(dados["campeoes_top"])
-    funcoes_content = gerar_funcoes_html(dados["funcoes"])
-
-    # Template HTML usando f-strings
-    html_template = f"""
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio LoL - {dados["nickname"]}</title>
+    <title>Portfólio - Rhuan Pablo Ferreira Cordeiro</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    </head>
 <body>
     <header>
-        <h1>{dados["nickname"]}</h1>
-        <h2>{dados["elo"]} Player</h2>
+        <h1>Rhuan Pablo Ferreira Cordeiro</h1>
+       
+**`Analista de departamento pessoal`**
+
+Me chamo Rhuan Pablo, tenho 22 anos e sou natural do Distrito Federal. Concluí o ensino médio no Colégio Notre dame. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na UDF. Sou apaixonado por departamento pessoal e recusrsos humanos.
+        <p>Superior de tecnologia em Análise e Desenvolvimento de Sistemas (UDF) - Cursando 2º semestre</p>
+        <div class="contato-info">
+            <p><strong>Email:</strong> rhuanpablo619@gmail.com | <strong>Telefone:</strong> (61) 99590-6324</p>
+            <p><strong>Local:</strong> Arniqueiras - DF</p>
+            <p><strong>LinkedIn:</strong> [**LINK DO SEU LINKEDIN AQUI**]</p>
+        </div>
     </header>
 
     <main>
-        <section id="geral" class="card">
-            <h2>🏆 Visão Geral de Desempenho</h2>
-            <div id="dados-gerais">
-                <p><strong>Taxa de Vitória (Winrate):</strong> {dados["winrate"]}</p>
-                <p><strong>Total de Jogos Ranqueados:</strong> {dados["total_jogos"]}</p>
-                <p><strong>KDA Médio:</strong> {dados["kda_geral"]}</p>
-            </div>
-        </section>
-
-        <section id="campeoes" class="card">
-            <h2>⚔️ Campeões Mais Jogados (Top 3)</h2>
-            {campeoes_content}
-        </section>
-
-        <section id="funcoes" class="card">
-            <h2>🗺️ Funções (Roles) Mais Jogadas</h2>
-            <div id="lista-funcoes">
-                {funcoes_content}
-            </div>
-        </section>
-        
-        <section id="destaques" class="card">
-            <h2>✨ Melhores Momentos/Destaques</h2>
-            <p>Links para replays, clipes ou análises de partidas importantes.</p>
+        <section id="resumo" class="card">
+            <h2>🎯 Resumo e Habilidades</h2>
             <ul>
-                <li><a href="#" target="_blank">Replay VOD: Partida X</a></li>
-                <li><a href="#" target="_blank">Clip: Ace de Jinx</a></li>
+                <li>Excelente relacionamento interpessoal e foco em atendimento ao colaborador.</li>
+                <li>Organização, proatividade e atenção a detalhes em processos administrativos.</li>
+                <li>Domínio do Pacote Office (Word, Excel, PowerPoint e Outlook) - nível Intermediário/avançado.</li>
+                <li>Capacidade analítica para elaboração de relatórios e dashboards.</li>
+                <li>Conhecimentos em Excel Intermediário/avançado: tabelas dinâmicas, PROCV, PROCX, fórmulas, gráficos e dashboards.</li>
+                <li>Noções de Banco de Dados (SQL básico para consultas e extração de dados).</li>
+                <li>Vivência com sistemas de controle de ponto, folha de pagamento e benefícios integrados.</li>
             </ul>
         </section>
+        
+        <section id="experiencia" class="card">
+            <h2>💼 Experiência Profissional</h2>
+
+            <div class="cargo-item">
+                <h3>Assistente de Departamento Pessoal</h3>
+                <p class="empresa">GRUPO SKS Industria, serviço e comércio para construção - Brasília - DF</p>
+                <p class="periodo">Maio/2024 - Atual</p>
+                <ul>
+                    <li>Gestão do ponto eletrônico do grupo (monitoramento, relatórios, banco de horas, importação de verbas para folha).</li>
+                    <li>Admissão de novos colaboradores, atualização de cadastros e emissão de relatórios para lideranças.</li>
+                    <li>Gestão de benefícios corporativos (vale-transporte, vale-alimentação, restaurante) e suporte aos colaboradores.</li>
+                    <li>Controle e conferência de faturas mensais dos benefícios.</li>
+                </ul>
+            </div>
+
+            <div class="cargo-item">
+                <h3>Auxiliar de Recursos Humanos</h3>
+                <p class="empresa">GRUPO SKS Industria, serviço e comércio para construção - Brasília - DF</p>
+                <p class="periodo">Setembro/2023 - Abril/2024</p>
+                <ul>
+                    <li>Recrutamento e seleção (divulgação de vagas, triagem de currículos, entrevistas e organização de documentos para admissão).</li>
+                    <li>Gestão do ponto eletrônico do grupo de CNPJ.</li>
+                    <li>Gestão de benefícios corporativos (vale-transporte, vale-alimentação e demais benefícios).</li>
+                </ul>
+            </div>
+
+             <div class="cargo-item">
+                <h3>Jovem Aprendiz</h3>
+                <p class="empresa">GRUPO SKS Industria, serviço e comércio para construção - Brasília - DF</p>
+                <p class="periodo">Maio/2023 - Agosto/2023</p>
+                <ul>
+                    <li>Realização de entrevistas para diversos cargos operacionais na indústria.</li>
+                    <li>Organização de documentação para admissão dos aprovados.</li>
+                    <li>Responsável pela gestão do ponto eletrônico de mais de 200 colaboradores.</li>
+                </ul>
+            </div>
+        </section>
+
     </main>
+
+    <footer>
+        <p>Portfólio criado com base no currículo de Rhuan Pablo Ferreira Cordeiro. Brasília, 12 de Abril de 2025.</p>
+    </footer>
 </body>
-</html>
-"""
-    return html_template
+</html>body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
 
-# --- 4. EXECUÇÃO E SALVAMENTO DO ARQUIVO ---
+header {
+    background-color: #004d99; /* Azul escuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-def main():
-    """Gera o HTML e salva como index.html."""
-    
-    # 1. Gerar o HTML
-    html_final = gerar_portfolio_html(dados_jogador)
-    
-    # 2. Salvar no arquivo (index.html é o padrão para páginas web)
-    caminho_arquivo = "index.html"
-    try:
-        with open(caminho_arquivo, "w", encoding="utf-8") as f:
-            f.write(html_final)
-        print(f"✅ Arquivo '{caminho_arquivo}' gerado com sucesso!")
-        print("Você pode abrir o arquivo no seu navegador para ver o resultado.")
-    except Exception as e:
-        print(f"❌ Erro ao salvar o arquivo: {e}")
+header h1 {
+    margin-bottom: 5px;
+}
 
-if __name__ == "__main__":
-    main()
+.contato-info {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    border-bottom: 2px solid #004d99;
+    padding-bottom: 5px;
+    color: #004d99;
+    margin-top: 0;
+}
+
+/* Estilização da Experiência Profissional */
+.cargo-item {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 3px solid #004d99;
+}
+
+.cargo-item h3 {
+    margin: 0 0 2px 0;
+    color: #007bff; /* Azul claro */
+}
+
+.empresa {
+    font-style: italic;
+    color: #555;
+    margin: 0 0 5px 0;
+}
+
+.periodo {
+    font-size: 0.9em;
+    color: #777;
+    margin: 0 0 10px 0;
+}
+
+.cargo-item ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 0;
+    font-size: 0.95em;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 0.8em;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+    header, main {
+        padding: 10px;
+    }
+
+    .contato-info p {
+        display: block;
+        margin: 5px 0;
+    }
+}
