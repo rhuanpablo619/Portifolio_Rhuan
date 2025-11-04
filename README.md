@@ -1,176 +1,137 @@
-# 👩🏻‍💻 Rhuan Pablo
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio LoL - Seu Nickname</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>[SEU NICKNAME]</h1>
+        <h2>Jogador Profissional / High Elo Player</h2>
+    </header>
 
-**`Desenvolvedor FullStack`**
+    <main>
+        <section id="geral" class="card">
+            <h2>🏆 Visão Geral de Desempenho</h2>
+            <div id="dados-gerais">
+                </div>
+        </section>
 
-Me chamo Rhuan, tenho 22 anos e sou natural do Distrito Federal. Concluí o ensino médio no Colégio Notre Dame. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na UDF. Sou amante da tecnologia e compartilho meu conhecimento através do meu canal no YouTube "[Larissa Kich](https://www.youtube.com/@larissakich)", onde ensino a criar projetos web, e também através do Instagram, com o perfil chamado "[Dev em Dev](https://www.instagram.com/dev_em_dev/)".
+        <section id="campeoes" class="card">
+            <h2>⚔️ Campeões Mais Jogados (Top 3)</h2>
+            <ul id="lista-campeoes">
+                </ul>
+        </section>
 
-<p align="left">
-    <a href="https://www.youtube.com/@larissakich?sub_confirmation=1">
-        <img 
-            alt="youtube subscribers" 
-            title="Inscreva-se no meu canal" 
-            src="https://custom-icon-badges.demolab.com/youtube/channel/subscribers/UCo-gJ8RnTn5akHqHvO55DVA?color=%23E05D44&label=Inscreva-se&logo=video&logoColor=white&style=for-the-badge&labelColor=CE4630"
-        />
-    </a>
-    <a href="https://www.youtube.com/@larissakich">
-        <img 
-            alt="youtube views" 
-            title="Vizualizações no YouTube" 
-            src="https://custom-icon-badges.demolab.com/youtube/channel/views/UCo-gJ8RnTn5akHqHvO55DVA?color=%23E1AD0E&logo=eye&logoColor=white&style=for-the-badge&labelColor=C79600"
-        />
-    </a> 
-    <a href="https://github.com/Larissakich?tab=repositories&sort=stargazers">
-        <img 
-            alt="Total de estrelas" 
-            title="Total de estrelas GitHub" 
-            src="https://custom-icon-badges.demolab.com/github/stars/Larissakich?color=55960c&style=for-the-badge&labelColor=488207&logo=star&label=estrelas"
-        />
-    </a>
-    <a href="https://github.com/Larissakich?tab=followers">
-        <img 
-            alt="Seguidores" 
-            title="Me siga no GitHub" 
-            src="https://custom-icon-badges.demolab.com/github/followers/Larissakich?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=github&label=Seguidores&logoColor=white"
-        />
-    </a>
-</p>
+        <section id="funcoes" class="card">
+            <h2>🗺️ Funções (Roles) Mais Jogadas</h2>
+            <div id="lista-funcoes">
+                </div>
+        </section>
 
----
+        <section id="destaques" class="card">
+            <h2>✨ Melhores Momentos/Destaques</h2>
+            <p>Links para replays, clipes ou análises de partidas importantes.</p>
+            <ul>
+                <li><a href="#" target="_blank">Replay VOD: Partida contra time X (MVP)</a></li>
+                <li><a href="#" target="_blank">Clip: Quadra Kill de Jinx</a></li>
+            </ul>
+        </section>
+    </main>
 
-### 🤖 Linguagens e Tecnologias
+    <script src="script.js"></script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e; /* Azul Escuro */
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
 
-<img 
-    align="left" 
-    alt="HTML"
-    title="HTML" 
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="CSS" 
-    title="CSS"
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="JavaScript" 
-    title="JavaScript"
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="TypeScript"
-    title="TypeScript" 
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="React"
-    title="React" 
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="Next.js" 
-    title="Next.js"
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="Bootstrap"
-    title="Bootstrap" 
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="Tailwind" 
-    title="Tailwind"
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="SASS" 
-    title="SASS"
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="PHP" 
-    title="PHP"
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="Laravel" 
-    title="Laravel"
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="JQuery" 
-    title="JQuery"
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="Git" 
-    title="Git"
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="Python" 
-    title="Python"
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" 
-/>
+header {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #0f4c75; /* Azul Médio */
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
 
-<br/>
-<br/>
+h1 {
+    font-size: 3em;
+    color: #ffcc00; /* Dourado */
+}
 
-### 📊 Estatísticas
+.card {
+    background-color: #2c394b; /* Azul Acinzentado */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
 
-<p>
-  <img 
-    align="left" 
-    alt="GitHub Stats" 
-    height="200" 
-    style="padding-right: 10px;" 
-    src="https://github-readme-stats.vercel.app/api?username=Larissakich&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br" 
-  />
+h2 {
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
 
-<img 
-      align="left" 
-      alt="GitHub Stats" 
-      height="200" 
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=larissakich&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=9" 
-  />
+/* Estilos de Lista */
+#lista-campeoes li, #lista-funcoes div {
+    background-color: #1a1a2e;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #ffcc00;
+    border-radius: 4px;
+}
+// DADOS DE EXEMPLO (MOCKADOS)
+const dadosJogador = {
+    nickname: "SeuNickAqui",
+    elo: "Mestre",
+    winrate: 62.5, // 62.5%
+    totalJogos: 480,
+    kdaGeral: 4.15,
+    
+    campeoes: [
+        { nome: "Caitlyn", jogos: 150, winrate: 68 },
+        { nome: "Leona", jogos: 120, winrate: 61 },
+        { nome: "Jinx", jogos: 80, winrate: 59 }
+    ],
 
-</p>
+    funcoes: [
+        { funcao: "ADC", porcentagem: 70 },
+        { funcao: "Suporte", porcentagem: 20 },
+        { funcao: "Mid", porcentagem: 10 }
+    ]
+};
+
+// FUNÇÃO PARA EXIBIR OS DADOS NO HTML
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. DADOS GERAIS
+    const geralDiv = document.getElementById('dados-gerais');
+    geralDiv.innerHTML = `
+        <p><strong>Elo Atual:</strong> ${dadosJogador.elo}</p>
+        <p><strong>Taxa de Vitória (Winrate):</strong> ${dadosJogador.winrate}%</p>
+        <p><strong>Total de Jogos Ranqueados:</strong> ${dadosJogador.totalJogos}</p>
+        <p><strong>KDA Médio:</strong> ${dadosJogador.kdaGeral}</p>
+    `;
+
+    // 2. CAMPEÕES MAIS JOGADOS
+    const campeoesUl = document.getElementById('lista-campeoes');
+    dadosJogador.campeoes.forEach(campeao => {
+        const li = document.createElement('li');
+        li.textContent = `${campeao.nome} - ${campeao.jogos} Partidas (${campeao.winrate}% Winrate)`;
+        campeoesUl.appendChild(li);
+    });
+
+    // 3. FUNÇÕES MAIS JOGADAS
+    const funcoesDiv = document.getElementById('lista-funcoes');
+    dadosJogador.funcoes.forEach(funcao => {
+        const p = document.createElement('p');
+        p.textContent = `${funcao.funcao}: ${funcao.porcentagem}% dos Jogos`;
+        funcoesDiv.appendChild(p);
+    });
+});
