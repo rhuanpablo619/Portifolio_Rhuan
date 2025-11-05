@@ -18,7 +18,6 @@ Me chamo Rhuan Pablo, tenho 22 anos e sou natural do Distrito Federal. Concluí 
         <div class="contato-info">
             <p><strong>Email:</strong> rhuanpablo619@gmail.com | <strong>Telefone:</strong> (61) 99590-6324</p>
             <p><strong>Local:</strong> Arniqueiras - DF</p>
-            <p><strong>LinkedIn:</strong> [**LINK DO SEU LINKEDIN AQUI**]</p>
         </div>
     </header>
 
