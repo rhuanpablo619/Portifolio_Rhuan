@@ -1,38 +1,30 @@
+🚀 Portfólio Pessoal: RHUAN PABLO - RH & Análise de Sistemas
 
+🎯 Descrição do Projeto:
+Este é o portfólio pessoal de Rhuan Pablo, desenvolvido para apresentar sua trajetória profissional, com foco em sua experiência consolidada em Recursos Humanos e Departamento Pessoal, e sua transição e estudos atuais em Análise e Desenvolvimento de Sistemas.
+O portfólio inclui um sistema dinâmico de comentários (CRUD) implementado em PHP e MySQL, permitindo a interação dos visitantes e a gestão dos feedbacks.
 
-# Rhuan Pablo Ferreira Cordeiro
+✨ Funcionalidades:
+Página Única (Single Page Application - SPA): Navegação fluida por âncoras.
 
-## 💼 Analista de Departamento Pessoal
+Efeito de Digitação: Destaque inicial na seção Hero.
 
-### Sobre Mim
-Me chamo **Rhuan Pablo**, tenho 22 anos e sou natural do Distrito Federal. Concluí o ensino médio no Colégio Notre dame. 
-Atualmente, estou cursando **Análise e Desenvolvimento de Sistemas** na UDF. Sou apaixonado por **Departamento Pessoal e Recursos Humanos**.
+Seções Detalhadas: Sobre Mim, Habilidades (Skills), Experiência Profissional e Projetos.
 
----
+Sistema de Comentários Dinâmico (CRUD):
 
-### 🎓 Educação
+Envio e listagem de comentários em tempo real.
 
-* **Superior de Tecnologia em Análise e Desenvolvimento de Sistemas** (UDF) 
-    * Cursando o 2º semestre.
-    * Foco em [Adicionar Áreas de Interesse no Curso, ex: Programação Web, Banco de Dados].
+Botões de Editar e Excluir para a gestão dos comentários (requer scripts PHP e conexão com DB).
 
-* **Ensino Médio**
-    * Colégio Notre Dame.
+Design Responsivo: Adaptável a telas de desktop e mobile.
 
----
+💻 Tecnologias Utilizadas:
+Categoria:	Tecnologia
+Frontend:	HTML5, CSS3, JavaScript
+Backend:	PHP 7.x ou superior
+Banco de Dados:	MySQL
+Servidor Local:	XAMPP ou equivalente
+Framework CSS:	Nenhum (CSS Puro / Customizado)
+Ícones: 	Font Awesome, Devicons
 
-### 📞 Contato
-
-* **Email:** [rhuanpablo619@gmail.com](mailto:rhuanpablo619@gmail.com)
-* **Telefone:** (61) 99590-6324
-* **Local:** Arniqueiras - DF
-
----
-
-### 💡 Próximos Passos (Sugestões para o seu Portfólio)
-
-Como você está cursando Análise e Desenvolvimento de Sistemas, uma ótima ideia seria criar projetos no seu portfólio que unam sua paixão por RH/Departamento Pessoal com suas habilidades de programação, por exemplo:
-
-* **Sistema de Cálculo Simples:** Um script Python (ou uma página web) que calcule um benefício comum (ex: férias, 13º salário) baseado em inputs básicos.
-* **Banco de Dados de Funcionários:** Um projeto simples usando SQL ou Pandas (Python) para organizar e filtrar dados de funcionários.
-    
